@@ -3,94 +3,413 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Rein Mark Del Rosario - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <aside>
-        <div class="profile">
-            <img src="profile-pic.png" id="profile-pic">
-            <h1>Rein Mark Del Rosario </h1>
-            <h2>Fullstack Developer</h2>
-        </div>
-        <hr>
-        <div class="quick-details">
-            <div>
-                <span class="detail-head">Email</span>
-                <br>
-                <span>reinmark.delrosario@gmail.com</span>
+    <div class="portfolio-container">
+        <!-- Left Sidebar - Profile -->
+        <aside class="profile-sidebar">
+            <div class="profile-section">
+                <div class="profile-image">
+                    <img src="profile-pic.png" alt="Rein Mark Del Rosario">
+                    <div class="status-indicator"></div>
+                </div>
+                <h1 class="profile-name">Rein Mark Del Rosario</h1>
+                <h2 class="profile-title">Fullstack Developer</h2>
             </div>
-            <div>
-                <span class="detail-head">Phone</span>
-                <br>
-                <span>0991 213 9602</span>
+
+            <div class="contact-details">
+                <div class="contact-item">
+                    <ion-icon name="mail-outline" class="contact-icon"></ion-icon>
+                    <div class="contact-info">
+                        <span class="contact-label">EMAIL</span>
+                        <span class="contact-value">reinmark.delrosario@gmail.com</span>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <ion-icon name="call-outline" class="contact-icon"></ion-icon>
+                    <div class="contact-info">
+                        <span class="contact-label">PHONE</span>
+                        <span class="contact-value">+63 991 213 9602</span>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <ion-icon name="location-outline" class="contact-icon"></ion-icon>
+                    <div class="contact-info">
+                        <span class="contact-label">LOCATION</span>
+                        <span class="contact-value">Cavite, Philippines</span>
+                    </div>
+                </div>
             </div>
-            <div>
-                <span class="detail-head">Location</span>
-                <br>
-                <span>Cavite, Philippines</span>
-            </div>
-            <div class="detail-link">
-                <a href="https://github.com/nieroglyph" target="_blank">
-                    <ion-icon name="logo-github"></ion-icon>
-                </a>
-                <a href="https://www.linkedin.com/in/rmdelrosario06/" target="_blank">
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/rmdelrosario06/" target="_blank" class="social-link">
                     <ion-icon name="logo-linkedin"></ion-icon>
                 </a>
+                <a href="https://github.com/nieroglyph" target="_blank" class="social-link">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+                <a href="mailto:reinmark.delrosario@gmail.com" class="social-link">
+                    <ion-icon name="mail-outline"></ion-icon>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Right Content Area -->
+        <main class="content-area">
+            <!-- Navigation Tabs -->
+            <nav class="tab-navigation">
+                <button class="tab-btn active" data-tab="about">About</button>
+                <button class="tab-btn" data-tab="resume">Resume</button>
+                <button class="tab-btn" data-tab="projects">Projects</button>
+                <button class="tab-btn" data-tab="contact">Contact</button>
+            </nav>
+
+            <!-- Content Container -->
+            <div class="content-container">
                 
+                <!-- About Tab Content -->
+                <div class="tab-content active" id="about">
+                    <div class="content-header">
+                        <h1>About Me</h1>
+                        <div class="header-line"></div>
+                    </div>
+                    
+                    <div class="about-content">
+                        <p>
+                            I am a dedicated Computer Science student at the University of Perpetual Help System DALTA-Molino 
+                            with an outstanding GWA of 1.59. As an honor student, I have consistently demonstrated excellence 
+                            in academics while actively participating in international seminars and community outreach programs.
+                        </p>
+                        <p>
+                            My passion lies in creating innovative web solutions that combine functionality with exceptional 
+                            user experience. I specialize in both frontend and backend development, always staying current 
+                            with industry trends and best practices. I thrive on solving complex problems and bringing 
+                            creative ideas to life through code.
+                        </p>
+                    </div>
+
+                    <div class="what-i-do">
+                        <h2>My Background</h2>
+                        
+                        <div class="services-grid">
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <ion-icon name="phone-portrait-outline"></ion-icon>
+                                </div>
+                                <div class="service-content">
+                                    <h3>Web Development</h3>
+                                    <p>High-quality development of sites at the professional level.</p>
+                                </div>
+                            </div>
+
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <ion-icon name="code-slash-outline"></ion-icon>
+                                </div>
+                                <div class="service-content">
+                                    <h3>Frontend Development</h3>
+                                    <p>Modern and mobile-ready websites built with the latest technologies.</p>
+                                </div>
+                            </div>
+
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <ion-icon name="server-outline"></ion-icon>
+                                </div>
+                                <div class="service-content">
+                                    <h3>Backend Development</h3>
+                                    <p>High-performance backend services designed for scalability and seamless user experience.</p>
+                                </div>
+                            </div>
+
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <ion-icon name="shield-checkmark-outline"></ion-icon>
+                                </div>
+                                <div class="service-content">
+                                    <h3>Security Solutions</h3>
+                                    <p>Implementation of security measures and encryption tools for data protection.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-section">
+                        <h2>Skills</h2>
+                        <div class="skills-container">
+                            <div class="skill-icons">
+                                <div class="skill-icon">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                                </div>
+                                <div class="skill-icon">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                                </div>
+                                <div class="skill-icon">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                                </div>
+                                <div class="skill-icon">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resume Tab Content -->
+                <div class="tab-content" id="resume">
+                    <div class="content-header">
+                        <h1>Resume</h1>
+                        <div class="header-line"></div>
+                    </div>
+
+                    <div class="resume-section">
+                        <div class="resume-category">
+                            <h2>Education</h2>
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-date">2022 — 2026</div>
+                                    <div class="timeline-content">
+                                        <h3>Bachelor of Science in Computer Science</h3>
+                                        <h4>University of Perpetual Help System DALTA-Molino</h4>
+                                        <p>Honor Student with GWA of 1.59. Participated in several international seminars and academic excellence programs.</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-date">2022</div>
+                                    <div class="timeline-content">
+                                        <h3>Senior High School Diploma</h3>
+                                        <h4>University of Perpetual Help System DALTA-Molino</h4>
+                                        <p>Graduated with excellence. Participated in extracurricular activities including community outreach and educational seminars.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="resume-category">
+                            <h2>Experience</h2>
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-date">2023 — Present</div>
+                                    <div class="timeline-content">
+                                        <h3>Freelance Web Developer</h3>
+                                        <h4>Self-Employed</h4>
+                                        <p>Developing custom web applications and websites for various clients. Specializing in full-stack development with modern technologies.</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-date">2022 — 2023</div>
+                                    <div class="timeline-content">
+                                        <h3>Student Developer</h3>
+                                        <h4>Academic Projects</h4>
+                                        <p>Created various academic projects including encryption tools, web applications, and collaborative software solutions.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="resume-category">
+                            <h2>Skills</h2>
+                            <div class="skills-list">
+                                <div class="skill-item">
+                                    <span class="skill-name">HTML/CSS</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 90%"></div>
+                                    </div>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">JavaScript</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 85%"></div>
+                                    </div>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Python</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 88%"></div>
+                                    </div>
+                                    <span class="skill-percentage">88%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Django</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 82%"></div>
+                                    </div>
+                                    <span class="skill-percentage">82%</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="cv-download-bottom">
+                            <a href="./ReinMarkDelRosario_CV.pdf" download class="download-btn">
+                                <ion-icon name="download-outline"></ion-icon>
+                                Download CV
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projects Tab Content -->
+                <div class="tab-content" id="projects">
+                    <div class="content-header">
+                        <h1>Projects</h1>
+                        <div class="header-line"></div>
+                    </div>
+
+                    <div class="portfolio-filter">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="web">Web Development</button>
+                        <button class="filter-btn" data-filter="apps">Applications</button>
+                    </div>
+
+                    <div class="portfolio-grid">
+                        <div class="portfolio-item" data-category="web">
+                            <div class="portfolio-image">
+                                <img src="./thumbnails/mp-thumbnail.png" alt="Spotify Clone">
+                                <div class="portfolio-overlay">
+                                    <h3>Spotify Clone</h3>
+                                    <p>Music Streaming Platform</p>
+                                    <a href="https://nieroglyph.github.io/maritesplaylist/" target="_blank" class="portfolio-link">
+                                        <ion-icon name="open-outline"></ion-icon>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-item" data-category="apps">
+                            <div class="portfolio-image">
+                                <img src="./thumbnails/en-thumbnail.png" alt="AES Encryption Tool">
+                                <div class="portfolio-overlay">
+                                    <h3>AES Encryption Tool</h3>
+                                    <p>Security Application</p>
+                                    <a href="https://nieroglyph.github.io/Advanced-Encryption-Standard-AES-Tool/" target="_blank" class="portfolio-link">
+                                        <ion-icon name="open-outline"></ion-icon>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Tab Content -->
+                <div class="tab-content" id="contact">
+                    <div class="content-header">
+                        <h1>Contact</h1>
+                        <div class="header-line"></div>
+                    </div>
+
+                    <div class="contact-content">
+                        <div class="contact-intro">
+                            <p>
+                                I'm always open to discussing new opportunities, collaborations, or just having a chat about technology. 
+                                Feel free to reach out if you'd like to work together!
+                            </p>
+                        </div>
+
+                        <div class="contact-form">
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="name">Full Name</label>
+                                        <input type="text" id="name" name="name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email Address</label>
+                                        <input type="email" id="email" name="email" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject">Subject</label>
+                                    <input type="text" id="subject" name="subject" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" name="message" rows="6" required></textarea>
+                                </div>
+                                <button type="submit" class="submit-btn">Send Message</button>
+                            </form>
+                        </div>
+
+                        <div class="contact-info-grid">
+                            <div class="contact-card">
+                                <ion-icon name="mail-outline"></ion-icon>
+                                <h3>Email</h3>
+                                <p>reinmark.delrosario@gmail.com</p>
+                            </div>
+                            <div class="contact-card">
+                                <ion-icon name="call-outline"></ion-icon>
+                                <h3>Phone</h3>
+                                <p>+63 991 213 9602</p>
+                            </div>
+                            <div class="contact-card">
+                                <ion-icon name="location-outline"></ion-icon>
+                                <h3>Location</h3>
+                                <p>Cavite, Philippines</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-        </div>
-    </aside>
+        </main>
+    </div>
 
-    <main>
-        <section>
-            <h2>About Me</h2>
-            <p>I am a passionate web developer with a knack for creating dynamic and responsive websites.</p>
-        </section>
-
-        <section>
-            <h2>My Work</h2>
-            <p>Here are some of the projects I've worked on:</p>
-
-            <div class="projects-thumbnail">
-                <a href="https://nieroglyph.github.io/maritesplaylist/" target="_blank">
-                    <h3>Spotify Clone</h3>
-                    <img src="./thumbnails/mp-thumbnail.png" class="thumbnail" alt="Marites Playlist">
-                </a>
-            </div>
-            <br>
-            <div class="projects-thumbnail">
-                <a href="https://nieroglyph.github.io/Advanced-Encryption-Standard-AES-Tool/" target="_blank">
-                    <h3>Spotify Clone</h3>
-                    <img src="./thumbnails/en-thumbnail.png" class="thumbnail" alt="AES Tool">
-                </a>
-            </div>
-        </section>
-
-        <section>
-            <h2>Educational Background</h2>
-            <div>
-                <strong>2022, University of Perpetual Help System DALTA-Molino</strong>
-                <ul>
-                    <li>Senior High School Diploma</li>
-                    <li>
-                        Participated in extracurricular activities: community outreach,
-                        seminars
-                    </li>
-                </ul>
-                    <strong>2026, University of Perpetual Help System DALTA-Molino</strong> <br>
-                    <p><em>Bachelor of Science in Computer Science</em></p>
-                <ul>
-                    <li>Honor Student with a GPA of 1.72</li>
-                    <li>Participated in several international seminars</li>
-                </ul>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-    </footer>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        // Tab switching functionality
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const tabId = btn.getAttribute('data-tab');
+                
+                // Remove active class from all tabs and contents
+                tabBtns.forEach(b => b.classList.remove('active'));
+                tabContents.forEach(content => content.classList.remove('active'));
+                
+                // Add active class to clicked tab and corresponding content
+                btn.classList.add('active');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+
+        // Portfolio filter functionality
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const filter = btn.getAttribute('data-filter');
+                
+                // Remove active class from all filter buttons
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                // Show/hide portfolio items based on filter
+                portfolioItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Form submission
+        const contactForm = document.querySelector('.contact-form form');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your message! I will get back to you soon.');
+            contactForm.reset();
+        });
+    </script>
 </body>
 </html>
